@@ -1,0 +1,18 @@
+▗▄▄▄▖▗▖  ▗▖▗▖  ▗▖     ▗▄▄▖▗▄▄▄▖ ▗▄▄▖▗▖ ▗▖▗▄▄▖ ▗▄▄▄▖▗▄▄▄▖▗▖  ▗▖    ▗▄▄▄▖▗▄▖  ▗▄▖ ▗▖    ▗▄▄▖
+▐▌   ▐▌  ▐▌▐▛▚▞▜▌    ▐▌   ▐▌   ▐▌   ▐▌ ▐▌▐▌ ▐▌  █    █   ▝▚▞▘       █ ▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌
+▐▛▀▀▘▐▌  ▐▌▐▌  ▐▌     ▝▀▚▖▐▛▀▀▘▐▌   ▐▌ ▐▌▐▛▀▚▖  █    █    ▐▌        █ ▐▌ ▐▌▐▌ ▐▌▐▌    ▝▀▚▖
+▐▙▄▄▖ ▝▚▞▘ ▐▌  ▐▌    ▗▄▄▞▘▐▙▄▄▖▝▚▄▄▖▝▚▄▞▘▐▌ ▐▌▗▄█▄▖  █    ▐▌        █ ▝▚▄▞▘▝▚▄▞▘▐▙▄▄▖▗▄▄▞▘
+
+
+Smart Contract Tools Installed:
+
+- Foundry: https://github.com/foundry-rs/foundry
+- Slither: https://github.com/crytic/slither
+- hevm: https://github.com/argotorg/hevm
+- Certora CLI: https://docs.certora.com/en/latest/docs/user-guide/index.html
+- solc-select: https://github.com/crytic/solc-select
+- Vyper: https://github.com/vyperlang/vyper
+
+Use `solc-select` to switch between Solidity compiler versions.
+Use `n` to switch between Node versions.
+
