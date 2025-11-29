@@ -9,6 +9,7 @@ Primary tools include:
 
 - [Foundry](https://github.com/foundry-rs/foundry): Ethereum application development toolkit
 - [Slither](https://github.com/crytic/slither): Static Analyzer for Solidity and Vyper
+- [Aderyn](https://github.com/Cyfrin/aderyn): Static Analyzer for Solidity
 - [hevm](https://github.com/argotorg/hevm): Symbolic and concrete EVM execution engine
 - [Certora CLI](https://docs.certora.com/en/latest/docs/user-guide/index.html): Formal verification
 - [solc-select](https://github.com/crytic/solc-select): Manage and switch between Solidity compiler versions
@@ -24,6 +25,7 @@ Other tools are also included:
 - [CVC5](https://github.com/cvc5/cvc5): Theorem Prover
 - [jq](https://github.com/jqlang/jq): Command-line JSON processor
 - [just](https://github.com/casey/just): Command runner
+- [cloc](https://github.com/AlDanial/cloc): Count lines of code
 
 ## Usage
 

@@ -8,6 +8,7 @@ Smart Contract Tools Installed:
 
 - Foundry: https://github.com/foundry-rs/foundry
 - Slither: https://github.com/crytic/slither
+- Aderyn: https://github.com/Cyfrin/aderyn
 - hevm: https://github.com/argotorg/hevm
 - Certora CLI: https://docs.certora.com/en/latest/docs/user-guide/index.html
 - solc-select: https://github.com/crytic/solc-select
