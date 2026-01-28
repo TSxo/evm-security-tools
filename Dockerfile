@@ -26,8 +26,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # ------------------------------------------------------------------------------
 # Args
 
-ARG HEVM_VERSION="0.56.0"
-ARG HEVM_SHA="aabc7570a987bb87f1f2628ea80e284ce251ce444f36940933a1d47151d5bf09"
+ARG HEVM_VERSION="0.57.0"
+ARG HEVM_SHA="176537d33e6f996d1ad2b0f6767ee8d25bac6cf0c661b70294b4fd69a8704e5e"
 ARG HEVM_URL="https://github.com/argotorg/hevm/releases/download/release%2F${HEVM_VERSION}/hevm-x86_64-linux"
 
 ARG FOUNDRY_VERSION="v1.5.0"
@@ -38,9 +38,9 @@ ARG N_VERSION="v10.2.0"
 ARG N_URL="https://raw.githubusercontent.com/tj/n/${N_VERSION}/bin/n"
 ARG N_SHA="e4f5baa2e912d3a39b50d9f617de03acf2b4eeb3590f0a4181123f8393da1a19"
 
-ARG ADERYN_VERSION="v0.6.5"
+ARG ADERYN_VERSION="v0.6.8"
 ARG ADERYN_URL="https://github.com/Cyfrin/aderyn/releases/download/aderyn-${ADERYN_VERSION}/aderyn-installer.sh"
-ARG ADERYN_SHA="c7f8243ed7984614e1c4eac4f39c7d02c03563ee4bdb34861e8383b0d10f21f0"
+ARG ADERYN_SHA="6c005c222681f1349caa31aa7c9d55b0fd0ae779c0faad65e8eaa6dc872f8faf"
 
 # ------------------------------------------------------------------------------
 # Install Node and Yarn
