@@ -10,7 +10,6 @@ Primary tools include:
 - [Foundry](https://github.com/foundry-rs/foundry): Ethereum application development toolkit
 - [Slither](https://github.com/crytic/slither): Static Analyzer for Solidity and Vyper
 - [Aderyn](https://github.com/Cyfrin/aderyn): Static Analyzer for Solidity
-- [hevm](https://github.com/argotorg/hevm): Symbolic and concrete EVM execution engine
 - [Certora CLI](https://docs.certora.com/en/latest/docs/user-guide/index.html): Formal verification
 - [solc-select](https://github.com/crytic/solc-select): Manage and switch between Solidity compiler versions
 - [Vyper](https://github.com/vyperlang/vyper): Pythonic Smart Contract Language for the EVM
@@ -53,12 +52,6 @@ docker run -it --rm -v $(pwd):/workspace ghcr.io/tsxo/evm-security-tools:latest 
 
 ```bash
 docker run -it --rm -v $(pwd):/workspace ghcr.io/tsxo/evm-security-tools:latest forge test
-```
-
-### Example: Symbolic Execution with HEVM
-
-```bash
-docker run -it --rm -v $(pwd):/workspace ghcr.io/tsxo/evm-security-tools:latest hevm test
 ```
 
 ## Building from Source

@@ -26,11 +26,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # ------------------------------------------------------------------------------
 # Args
 
-ARG HEVM_VERSION="0.57.0"
-ARG HEVM_SHA="176537d33e6f996d1ad2b0f6767ee8d25bac6cf0c661b70294b4fd69a8704e5e"
-ARG HEVM_URL="https://github.com/argotorg/hevm/releases/download/release%2F${HEVM_VERSION}/hevm-x86_64-linux"
-
-ARG FOUNDRY_VERSION="v1.5.0"
+ARG FOUNDRY_VERSION="v1.7.1"
 ARG FOUNDRY_SHA="e103bb7839e0c8c65263c7971d0b6bf94ffbe2e81dff89c6b3ecb6ce2d76b71c"
 ARG FOUNDRY_URL="https://raw.githubusercontent.com/foundry-rs/foundry/${FOUNDRY_VERSION}/foundryup/install"
 
@@ -65,6 +61,7 @@ ENV LOCAL_BIN="$HOME/.local/bin"
 ENV FOUNDRY_BIN="$HOME/.foundry/bin"
 ENV PY_TOOLS_BIN="$HOME/.pytools/bin"
 ENV COMPLETIONS="$HOME/.local/share/bash-completion/completions"
+
 ENV PATH="$PATH:$LOCAL_BIN:$FOUNDRY_BIN:$PY_TOOLS_BIN"
 
 # ------------------------------------------------------------------------------
@@ -76,15 +73,6 @@ RUN curl -fsSL "$FOUNDRY_URL" -o install && \
     foundryup && \
     mkdir -p $COMPLETIONS && \
     for i in forge anvil cast; do "$i" completions bash > "$COMPLETIONS/$i"; done
-
-# ------------------------------------------------------------------------------
-# Install HEVM
-
-RUN curl -fsSL "$HEVM_URL" -o hevm && \
-    echo "$HEVM_SHA  hevm" | sha256sum -c - && \
-    mkdir -p "$LOCAL_BIN" && \
-    mv hevm "$LOCAL_BIN/hevm" && \
-    chmod 755 "$LOCAL_BIN/hevm"
 
 # ------------------------------------------------------------------------------
 # Install Python Tools
