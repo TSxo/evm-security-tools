@@ -1,3 +1,7 @@
+ARG JUST_VERSION="1.57.0"
+
+FROM ghcr.io/casey/just:${JUST_VERSION} AS just-bin
+
 FROM ubuntu:24.04
 
 # ------------------------------------------------------------------------------
@@ -12,7 +16,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     cloc \
     git \
     default-jre \
-    just \
     jq \
     python3 \
     python3-venv \
@@ -37,6 +40,11 @@ ARG N_SHA="e4f5baa2e912d3a39b50d9f617de03acf2b4eeb3590f0a4181123f8393da1a19"
 ARG ADERYN_VERSION="v0.6.8"
 ARG ADERYN_URL="https://github.com/Cyfrin/aderyn/releases/download/aderyn-${ADERYN_VERSION}/aderyn-installer.sh"
 ARG ADERYN_SHA="6c005c222681f1349caa31aa7c9d55b0fd0ae779c0faad65e8eaa6dc872f8faf"
+
+# ------------------------------------------------------------------------------
+# Install Just
+
+COPY --from=just-bin /just /usr/local/bin/just
 
 # ------------------------------------------------------------------------------
 # Install Node and Yarn
